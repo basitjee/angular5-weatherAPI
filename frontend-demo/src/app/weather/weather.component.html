@@ -1,0 +1,24 @@
+<a *ngIf="wInfo else loadingInformation" routerLink="/weather/{{woeid}}" class="weather">
+  <h3>{{name}}</h3>
+  <ul>
+    <li>Temperature: {{wInfo.the_temp}}</li>
+    <li>Min Temp: {{wInfo.min_temp}}</li>
+    <li>Max Temp: {{wInfo.max_temp}}</li>
+    <li>Date {{wInfo.applicable_date | momentformat}}</li>
+  </ul>
+</a>
+
+<ng-template #loadingInformation class="weather">
+    <a class="weather">
+      <h3>{{responseMessage}}</h3>
+      <ul>
+        <li>...</li>
+        <li>...</li>
+        <li>...</li>
+        <li>...</li>
+      </ul>
+    </a>
+    
+</ng-template> 
+
+ 

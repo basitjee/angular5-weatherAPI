@@ -1,0 +1,19 @@
+.weather {
+    float: left;
+    width: 23%;
+    border: 1px solid #fcfcfc;
+    padding: 1%;
+    margin: 1%;
+    box-shadow: 6px 9px 5px #8c8c8c;
+    /* border: 1px solid #8c8c8c; */
+}
+
+.weather ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.weather h3 {
+    background: gradi
+}

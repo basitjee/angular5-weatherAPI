@@ -1,0 +1,29 @@
+<div class="weather-details" *ngIf="wInfo else loading">
+  <h3>{{wInfo.title}}</h3>
+  <table>
+    <tbody>
+      <tr>
+        <td class="weather-per-day" *ngFor="let cw of wInfo.consolidated_weather">
+            <table>
+              <tbody>
+                <tr class="date">
+                  <td>
+                      <b>{{cw.applicable_date | momentformat}}</b>
+                  </td>
+                </tr>
+                <tr>
+                    <ul class="temp-details">
+                        <li>Temperature. {{cw.the_temp}}</li>
+                        <li>Max. {{cw.max_temp}}</li>
+                        <li>Min. {{cw.min_temp}}</li>
+                      </ul>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ng-template #loading>Loading</ng-template>

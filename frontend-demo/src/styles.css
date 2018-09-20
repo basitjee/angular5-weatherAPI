@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+a,a:hover,a:focus {
+    color: #000000;
+    text-decoration: none; /* no underline */
+  }

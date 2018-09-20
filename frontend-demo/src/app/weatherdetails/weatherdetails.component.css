@@ -1,0 +1,21 @@
+.weather-details {
+    margin: 5px auto !important;
+    background: #fcfcfc;
+    margin-left: 2.5%;
+    width: 90%;
+}
+.temp-details {
+    margin: 0px;
+    padding: 9px;
+    list-style: none;
+    background: #fcfcfc;
+}
+table {
+    padding: 7px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+.date {
+    background: rgba(255,128,128,0.25);
+}

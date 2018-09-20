@@ -1,0 +1,4 @@
+<div class="search">
+  <input type="text" placeholder="Search" (keydown.enter)="onKeydown($event)" (input)="keyword = $event.target.value" >
+  <button type="submit" (click)="search()">Search</button>
+</div>
